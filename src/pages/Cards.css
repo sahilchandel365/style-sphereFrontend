@@ -1,0 +1,130 @@
+/* General layout for the cards container */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card styling with themed colors */
+.card {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #BDB5D5; /* Muted lavender gray border */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(106, 27, 154, 0.1); /* Deep plum shadow */
+  background-color: #F5F5F5; /* White smoke background */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on cards */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(106, 27, 154, 0.2); /* Plum hover shadow */
+}
+
+/* Product image styling */
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Title and price */
+.card h3 {
+  font-size: 18px;
+  color: #6A1B9A; /* Deep plum for titles */
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card p {
+  color: #555; /* Dark gray */
+  margin-bottom: 10px;
+}
+
+.card p.few-left-message {
+  color: #EF5350; /* Warm red for low stock */
+  font-weight: bold;
+}
+
+/* Quantity selector styling */
+.quantity-selector {
+  margin: 15px 0;
+}
+
+.quantity-selector label {
+  font-size: 14px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.quantity-selector select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #BDB5D5;
+  border-radius: 6px;
+  background-color: white;
+  color: #333;
+}
+
+/* Add to Cart button styling */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #B76E79; /* Rose gold */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #999;
+}
+
+button:hover:not(:disabled) {
+  background-color: #A65C68; /* Darker rose gold */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 15px;
+  }
+
+  .product-image {
+    height: 150px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,111 @@
+/* Outer container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 1rem;
+  margin-top: 0;
+  background-color: #f5f5f5; /* Soft Light Gray */
+}
+
+/* Styled card container */
+.card-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 430px;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form title */
+.signup-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #4d086b; /* Deep Purple */
+  font-weight: 600;
+}
+
+/* Input field style */
+.input-field,
+.ant-input,
+.ant-input-password,
+.ant-input-affix-wrapper {
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-field:focus,
+.ant-input-affix-wrapper:focus-within {
+  border-color: #ffe600; /* Golden Color */
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+}
+
+/* Signup button styling */
+.signup-button {
+  width: 100%;
+  background-color: #ffe600 !important; /* Golden Color */
+  color: black !important;
+  border-color: #d4af37 !important;
+  font-weight: 600;
+  height: 40px;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+.signup-button:hover,
+.signup-button:focus {
+  background-color: #1d7be6e0 !important; /* Light Blue on Hover */
+  border-color: #c49b28 !important; /* Darker Golden */
+  color: white !important; /* Change text to white */
+}
+
+/* Checkbox styling */
+.checkbox-section {
+  margin: 10px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Link and login redirect text */
+.register-text {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.register-text .link {
+  color: #d4af37; /* Golden Color */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.register-text .link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .card-container {
+    padding: 2rem;
+    margin: 0 1rem;
+  }
+
+  .signup-title {
+    font-size: 1.5rem;
+  }
+
+  .register-text {
+    font-size: 0.9rem;
+  }
+}

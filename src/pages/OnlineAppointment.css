@@ -1,0 +1,44 @@
+/* Appointment Container */
+.appointment-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  background-color: #faf8fc; /* Soft lavender white */
+  padding: 2rem;
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(106, 27, 154, 0.2); /* Deep Purple shadow */
+}
+
+/* Appointment Title */
+.appointment-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #4d086b; /* Deep Purple */
+  font-weight: 600;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+}
+
+/* Appointment Form Items */
+.appointment-form .ant-form-item {
+  margin-bottom: 1.2rem;
+}
+
+/* Appointment Button */
+.appointment-button {
+  width: 100%;
+  background-color: #ffe600; /* Golden background */
+  color: black;
+  border-color: #d4af37; /* Golden border */
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  transition: background-color 0.3s ease;
+  padding: 12px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.appointment-button:hover {
+  background-color: #c49b28; /* Darker golden color */
+  color: white;
+}

@@ -1,0 +1,50 @@
+.contact-container {
+  background-color: #F5F5F5; /* White smoke */
+  color: #333333; /* Charcoal text */
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(106, 27, 154, 0.1); /* Deep plum soft shadow */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-header {
+  color: #6A1B9A; /* Deep plum */
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contact-subheader {
+  color: #B76E79; /* Rose gold */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.contact-highlight {
+  color: #B76E79; /* Rose gold accent */
+  font-weight: bold;
+}
+
+.contact-service-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto 1.5rem auto;
+  text-align: left;
+  max-width: 700px;
+}
+
+.contact-list-item {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}

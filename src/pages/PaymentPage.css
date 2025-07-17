@@ -1,0 +1,222 @@
+/* General Layout and Container */
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.payment-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #4d086b; /* Deep Purple */
+  font-family: 'Georgia', serif; /* Elegant font */
+  font-style: italic; /* Stylish italic */
+}
+
+/* Payment Card */
+.payment-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #faf8fc; /* Soft Lavender White */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(106, 27, 154, 0.2); /* Deep Purple shadow */
+}
+
+.payment-card h3 {
+  font-size: 1.5rem;
+  color: #4d086b; /* Deep Purple */
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+}
+
+.payment-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+  font-family: 'Georgia', serif;
+}
+
+/* Divider Style */
+.ant-divider {
+  margin: 20px 0;
+  border-color: #4d086b; /* Deep Purple divider */
+}
+
+/* Radio Group Styling */
+.payment-card .ant-radio-group {
+  margin-bottom: 20px;
+}
+
+.payment-card .ant-radio {
+  font-size: 1rem;
+  color: #4d086b; /* Deep Purple for radio */
+}
+
+/* Card Input Wrapper */
+.payment-card .card-input-wrapper {
+  margin-top: 10px;
+}
+
+/* QR Code Wrapper */
+.payment-card .qr-code-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.qr-code-wrapper p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #4d086b; /* Deep Purple text */
+}
+
+/* Form Submit Button */
+.payment-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #ffe600; /* Golden */
+  border-color: #d4af37; /* Golden border */
+  color: black;
+  border-radius: 6px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.payment-button:hover {
+  background-color: #c49b28; /* Darker Golden */
+}
+
+.payment-button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+/* Spin Loader */
+.ant-spin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* Toast Container */
+.Toastify__toast-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .payment-container {
+    padding: 10px;
+  }
+
+  .payment-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .payment-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+  }
+
+  .payment-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .payment-card p {
+    font-size: 0.9rem;
+  }
+
+  .payment-button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-container {
+    padding: 10px;
+  }
+
+  .payment-title {
+    font-size: 1.25rem;
+  }
+
+  .payment-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .payment-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .payment-card p {
+    font-size: 0.85rem;
+  }
+
+  .payment-button {
+    font-size: 0.85rem;
+    padding: 7px;
+  }
+
+  .card-input-wrapper {
+    font-size: 0.85rem;
+  }
+
+  .qr-code-wrapper p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .payment-container {
+    padding: 8px;
+  }
+
+  .payment-title {
+    font-size: 1.2rem;
+  }
+
+  .payment-card {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .payment-card h3 {
+    font-size: 1rem;
+  }
+
+  .payment-card p {
+    font-size: 0.8rem;
+  }
+
+  .payment-button {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .card-input-wrapper {
+    font-size: 0.8rem;
+  }
+
+  .qr-code-wrapper p {
+    font-size: 0.8rem;
+  }
+}

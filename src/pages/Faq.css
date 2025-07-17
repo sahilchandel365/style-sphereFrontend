@@ -1,0 +1,60 @@
+/* FAQ Container */
+.faq-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #faf8fc; /* Soft Lavender White */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(106, 27, 154, 0.2);
+}
+
+/* FAQ Title */
+.faq-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4d086b; /* Deep Purple */
+  margin-bottom: 1.5rem;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+}
+
+/* FAQ List */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* FAQ Item */
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+/* FAQ Question */
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #4d086b; /* Deep Purple */
+  font-family: 'Georgia', serif;
+}
+
+/* Toggle Icon */
+.toggle-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFD700; /* Golden */
+}
+
+/* FAQ Answer */
+.faq-answer {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #3e3b47; /* Elegant Gray */
+  font-family: 'Georgia', serif;
+  line-height: 1.7;
+}

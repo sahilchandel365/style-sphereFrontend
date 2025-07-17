@@ -1,0 +1,65 @@
+/* Photoshoot Container */
+.photoshoot-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #faf8fc; /* Soft Lavender White */
+  padding: 40px;
+  gap: 40px;
+}
+
+/* Booking Left Section */
+.booking-left {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+}
+
+.booking-left h2 {
+  font-size: 26px;
+  margin-top: 20px;
+  font-family: 'Georgia', serif; /* Elegant font */
+  color: #4d086b; /* Deep Purple */
+}
+
+.booking-left p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  font-family: 'Georgia', serif;
+}
+
+.booking-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Booking Right Section */
+.booking-right {
+  flex: 1;
+  max-width: 500px;
+  background-color: #fff; /* White */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+.booking-right h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #4d086b; /* Deep Purple */
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+}
+
+/* Main Heading */
+.booking-main-heading {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #4d086b; /* Deep Purple */
+  font-weight: 600;
+  font-family: 'Georgia', serif;
+}

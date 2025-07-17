@@ -6,4 +6,18 @@ export default defineConfig({
     tailwindcss(),react(),
   ],
   
+  
+    theme: {
+      extend: {
+        backgroundImage: {
+          'custom-pattern': "url('https://example.com/image.jpg')", // Custom background image
+        },
+      },
+    },
+    /** @type {import('tailwindcss').Config} */
+
+  
+
+
+  
 })

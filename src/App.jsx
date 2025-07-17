@@ -1,21 +1,38 @@
-import { useState } from "react";
+import React from 'react';
+import { Routes, Route } from 'react-router';
+import Nav from './pages/navigation/Nav';
+import Footer from './Footer';
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
+import routes from './Routes';
+import ProtectedRoute from './ProtectedRoute';
 
-import { BrowserRouter, Routes, Route } from "react-router";
-import Login from "./componets/Login"
-import Home from "./componets/Home";
-import { Shop } from "./componets/Shop";
+const stripePromise = loadStripe('pk_test_4eC39HqLyjWDarjtT1zdp7dc'); // Replace in production
 
-function App(){
-    return(
-        <>
+const App = () => {
+  return (
+    <Elements stripe={stripePromise}>
+      <div>
+        <Nav />
         <Routes>
-        {/* <Route index element={<Login />} /> */}
-        <Route index element={<Home/>}/>
-        <Route path="/shop" element={<Shop/>}/>
-        <Route path="/login" element={<Login/>}/>
-       
-</Routes>
-        </>
-    )
-}
-export default App
+          {routes.map(({ path, element, protected: isProtected }) => (
+            <Route
+              key={path}
+              path={path}
+              element={
+                isProtected ? (
+                  <ProtectedRoute>{element}</ProtectedRoute>
+                ) : (
+                  element
+                )
+              }
+            />
+          ))}
+        </Routes>
+        <Footer />
+      </div>
+    </Elements>
+  );
+};
+
+export default App;

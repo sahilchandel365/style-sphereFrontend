@@ -1,0 +1,110 @@
+/* 🌌 Footer Main Container with Gradient Background */
+.app-footer {
+  background: linear-gradient(135deg, #2f004f, #6a0dad, #38006b); /* Deep purple gradient */
+  color: #f3e8ff; /* Light lavender text */
+  padding: 40px 20px 15px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 📦 Content Layout */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🏷️ Brand Section */
+.footer-brand {
+  flex: 1 1 250px;
+}
+
+.footer-brand h3 {
+  color: #ffccff; /* Soft pastel pink-lavender */
+  margin-bottom: 0.5rem;
+  font-size: 22px;
+}
+
+.footer-brand p {
+  color: #e0c5ff;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 🔗 Quick Links */
+.footer-links {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a {
+  margin: 4px 0;
+  color: #d6b3ff; /* Light lavender link */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* 📞 Contact Info */
+.footer-contact {
+  flex: 1 1 200px;
+  color: #d6b3ff;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 🌐 Social Icons */
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.footer-icons a {
+  color: #e6ccff; /* Light purple */
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #ffffff;
+}
+
+/* ⬇ Copyright */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  color: #d9c2ff;
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-contact {
+    align-items: center;
+  }
+
+  .footer-links a {
+    margin: 6px 0;
+  }
+}

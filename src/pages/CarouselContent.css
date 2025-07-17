@@ -1,0 +1,183 @@
+/* 🌟 Main Layout */
+.carousel-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+  gap: 40px;
+  background: linear-gradient(to right, #f8f6fc, #ffffff);
+  color: #333;
+}
+
+/* 📘 Left Side */
+.carousel-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.carousel-left h2 {
+  font-size: 2.5rem;
+  color: #6a0dad;
+  margin-bottom: 20px;
+}
+
+.carousel-left p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.carousel-left ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.carousel-left ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* 📸 Right Side - Carousel */
+.carousel-right {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 💬 Carousel Content - Transparent Style */
+.carousel-content {
+  background: none; /* fully transparent */
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 80%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Optional: Frosted glass version instead
+.carousel-content {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+*/
+
+.carousel-content h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.carousel-content p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* 🎨 Ant Design Button */
+.carousel-content .ant-btn-primary {
+  background-color: #6a0dad;
+  border-color: #6a0dad;
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 10px 24px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.carousel-content .ant-btn-primary:hover {
+  background-color: #580e9c;
+  border-color: #580e9c;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  .carousel-content {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .carousel-slide {
+    height: 350px;
+  }
+
+  .carousel-left h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-main-container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .carousel-left,
+  .carousel-right {
+    width: 100%;
+  }
+
+  .carousel-left h2 {
+    font-size: 1.7rem;
+  }
+
+  .carousel-left p,
+  .carousel-left ul li {
+    font-size: 1rem;
+  }
+
+  .carousel-slide {
+    height: 300px;
+  }
+
+  .carousel-content {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .carousel-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-content p {
+    font-size: 0.95rem;
+  }
+
+  .carousel-content .ant-btn-primary {
+    font-size: 0.95rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-slide {
+    height: 250px;
+  }
+
+  .carousel-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-content p {
+    font-size: 0.85rem;
+  }
+
+  .carousel-content .ant-btn-primary {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
+}
