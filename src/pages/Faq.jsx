@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FAQ.css'; // Import the CSS file for styling
+import './Faq.css'; // Import the CSS file for styling
 
 const FAQ = () => {
   // State to toggle answer visibility for each question
