@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Form, Input, DatePicker, Button, Select, message } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import './PhotoshootBooking.css';
-import img from './pics/Photographer.webp';
+import img from '../assets/pics/photographer.webp';
 
 const { TextArea } = Input;
 const { Option } = Select;

@@ -3,11 +3,11 @@ import { Carousel, Button, message } from 'antd';
 import './CarouselContent.css';
 import { useNavigate } from 'react-router-dom';
 
-import img from './pics/img.jpg';
-import img1 from './pics/img1.avif';
-import img2 from './pics/bride.webp';
-import img3 from './pics/mask.avif';
-import img4 from './pics/model3.jpg';
+import img from '../assets/pics/img.jpg';
+import img1 from '../assets/pics/img1.avif';
+import img2 from '../assets/pics/bride.webp';
+import img3 from '../assets/pics/mask.avif';
+import img4 from '../assets/pics/model3.jpg';
 import { handleError } from '../utils';
 
 const slides = [

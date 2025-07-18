@@ -3,9 +3,9 @@ import { Modal, Button, Form, Input, Card, Row, Col, message, DatePicker, TimePi
 import { useNavigate } from 'react-router-dom';
 import './BridalBooking.css';
 
-import img from "./pics/bride3.webp";
-import img1 from "./pics/mahndi2.webp";
-import img2 from "./pics/haircut.jpg";
+import img from "../assets/pics/bride3.webp";
+import img1 from "../assets/pics/mahndi2.webp";
+import img2 from "../assets/pics/haircut.jpg";
 const { TextArea } = Input;
 const servicePrices = {
   'Bridal Makeup': 5000,

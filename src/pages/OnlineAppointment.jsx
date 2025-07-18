@@ -13,7 +13,7 @@ import './OnlineAppointment.css';
 import { handleError } from '../utils';
 import { ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
-import img from "./pics/salonbg.avif";
+import img from "../assets/pics/salonbg.avif";
 const { Option } = Select;
 
 const servicePrices = {

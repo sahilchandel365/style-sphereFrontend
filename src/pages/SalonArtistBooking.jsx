@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Modal, Form, Input, DatePicker, TimePicker, Button, Row, Col, Card, message } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import './SalonArtistBooking.css';
-import img from './pics/artist.webp';
-import img1 from './pics/artist3.avif';
-import img2 from './pics/artist2.webp';
+import img from '../assets/pics/artist.webp';
+import img1 from '../assets/pics/artist3.avif';
+import img2 from '../assets/pics/artist2.webp';
 
 const { TextArea } = Input;
 

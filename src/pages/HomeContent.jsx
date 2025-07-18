@@ -1,10 +1,10 @@
 import React from 'react';
 import './Homecontent.css'; // New CSS file
-import img from "./pics/artist3.jpg";
-import img1 from "./pics/salon.jpg";
-import img2 from "./pics/kit.jpg";
-import img3 from "./pics/model2.jpg";
-import img4 from "./pics/facial.jpg";
+import img from "../assets/pics/artist3.jpg";
+import img1 from "../assets/pics/salon.jpg";
+import img2 from "../assets/pics/kit.jpg";
+import img3 from "../assets/pics/model2.jpg";
+import img4 from "../assets/pics/facial.jpg";
 
 
 const HomePageContent = () => {
